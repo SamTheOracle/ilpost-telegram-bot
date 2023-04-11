@@ -1,0 +1,40 @@
+.modalIlPost{position:fixed;background-color:rgba(0,0,0,0.4);width:100%;height:100%;top:0;left:0;z-index:1}
+.modalIlPost .modalIlPostBox{min-width:400px;border-radius:10px;background-color:#f6f6f3;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);padding:30px;text-align:center}
+.modalIlPost .modalIlPostBox h3{font-family:Georgia,"Times New Roman",Times,serif;margin:0;font-size:26px;text-align:left;position:relative}
+.modalIlPost .modalIlPostBox h3 span{background:linear-gradient(180deg,#ffe726 0,#ffe726 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe726",endColorstr="#ffe726",GradientType=1);background-size:auto 70%;background-repeat:no-repeat;background-position:bottom}
+.modalIlPost .modalIlPostBox .modalIlPostInfo{min-height:80px;text-align:left;padding-top:10px;font-size:14px;font-family:"Red Hat Text",sans-serif}
+.modalIlPost .modalIlPostBox a.cta{margin:0 auto;border-radius:5.6px;background-color:#12b6d1;color:white;padding:30px;padding-top:10px;padding-bottom:10px;font-family:"Red Hat Text",sans-serif;font-size:16px;font-weight:600;text-decoration:none}
+.ilPostToast{position:fixed;bottom:50%;transform:translateY(-50%);left:0;z-index:1000;text-align:center;width:100%;display:none}
+.ilPostToast>.ilPostToastBox{background-color:#2196f3;margin:0 auto;max-width:500px;padding:10px;box-shadow:3px 7px 10px -5px rgba(0,0,0,0.75)}
+.ilPostToast>.ilPostToastBox>h3{color:white;font-size:20px;margin:0;font-family:Georgia,"Times New Roman",Times,serif;margin-bottom:10px}
+.ilPostToast>.ilPostToastBox>p{color:white;font-family:"Red Hat Display";font-size:14px;margin:0}
+.boxnewsletter{background-color:#f7f7f6;min-height:180px;margin:0}
+.boxnewsletter.loader{animation-name:loader;animation-duration:2s;animation-iteration-count:infinite}
+.boxnewsletter .boxnewsletterinfo{padding:20px}
+.boxnewsletter .boxnewsletterinfo.tpl-1 h4{display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:center;font-style:italic;font-weight:bold;padding-bottom:10px;margin-bottom:10px;border-bottom:2px solid black}
+.boxnewsletter .boxnewsletterinfo.tpl-1 h4 .title-image{width:38px;height:38px;border-radius:5px;overflow:hidden;margin-right:10px}
+.boxnewsletter .boxnewsletterinfo.tpl-1 h4 .title-image>img{width:100% !important;height:100% !important;-o-object-fit:contain;object-fit:contain}
+.boxnewsletter .boxnewsletterinfo.tpl-1 .buttonregistrazione{padding:10px 0;text-align:right}
+.boxnewsletter .boxnewsletterinfo.tpl-1 .buttonregistrazione a{padding:10px 40px}
+.boxnewsletter .boxnewsletterinfo.hasImage{display:flex;flex-flow:row wrap;justify-content:space-between;align-items:flex-start}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-image{width:84px;height:84px;border-radius:5px;overflow:hidden}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-image>img{width:100% !important;height:100% !important;-o-object-fit:contain !important;object-fit:contain !important}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info{display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:flex-start;width:calc(100% - 100px)}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info h4,.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info p{width:100%}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info h4{padding-bottom:10px;border-bottom:2px solid black;font-size:x-large;font-style:italic;font-weight:bold}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info .buttonregistrazione{margin-left:auto}
+.boxnewsletter .boxnewsletterinfo h4{margin:0;font-size:33px;line-height:33px;margin-bottom:10px;font-family:Georgia,"Times New Roman",Times,serif}
+.boxnewsletter .boxnewsletterinfo p{margin:0;font-size:14px;margin-bottom:10px;font-family:"Red Hat Display";font-weight:500}
+.boxnewsletter .boxnewsletterinfo p.ctaregistrazione{margin-top:10px;font-weight:500;margin-bottom:10px}
+.boxnewsletter .boxnewsletterinfo p a{text-decoration:underline;color:black}
+.boxnewsletter .boxnewsletterinfo form{margin-top:10px}
+.boxnewsletter .boxnewsletterinfo input[type="email"]{padding:2%;background-color:white;border:1px solid black;font-family:"Red Hat Display";font-size:15px;width:69%}
+.boxnewsletter .boxnewsletterinfo input[type="submit"]{background-color:#ffe725;font-family:"Red Hat Display";font-size:15px;padding:2%;border:0;border:1px solid #ffe725;margin-left:1%;width:25%;font-weight:500}
+.boxnewsletter .boxnewsletterinfo .buttonregistrazione{padding:10px;box-sizing:border-box;text-align:center}
+.boxnewsletter .boxnewsletterinfo .buttonregistrazione a{cursor:pointer;background-color:#ffe725;padding:2%;font-family:"Red Hat Display";font-size:15px;display:inline-block;text-decoration:none;font-weight:600;color:black;border-radius:4px;padding-left:40px;padding-right:40px}
+@media(max-width:480px){.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info h4{padding-bottom:5px;margin-bottom:5px;font-size:large;line-height:normal}
+.boxnewsletter .boxnewsletterinfo.hasImage .newsletter-info p{font-size:12px !important;line-height:normal !important}
+}@keyframes loader{0%{background-color:#f7f7f6}
+50%{background-color:#bdbdba}
+100%{background-color:#f7f7f6}
+}

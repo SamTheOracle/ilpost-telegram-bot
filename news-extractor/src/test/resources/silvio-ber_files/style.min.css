@@ -1,0 +1,174 @@
+@font-face{font-family:'Red Hat Display';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg8z6hR4jNCH5Z.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Red Hat Display';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6hR4jNCA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Red Hat Display';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg8z6hR4jNCH5Z.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Red Hat Display';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6hR4jNCA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+body.archive-podcasts .ilpostContainer{font-family:'Red Hat Display',sans-serif;padding:20px}
+body.archive-podcasts .ilpostContainer h1{text-align:center;font-size:50px;font-family:'Red Hat Display',sans-serif;padding-bottom:30px;margin:0}
+body.archive-podcasts .ilpostContainer .macroCategories{margin-bottom:26px}
+body.archive-podcasts .ilpostContainer .macroCategories.inline{float:left}
+body.archive-podcasts .ilpostContainer .macroCategories.block{position:relative;clear:both;padding-top:10px}
+body.archive-podcasts .ilpostContainer .macroCategories.block::after{content:' ';height:1px;position:absolute;top:0;width:100%;background-color:#767676}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card{width:119px;margin-bottom:26px}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card h3{font-size:13px;line-height:17px}
+body.archive-podcasts .ilpostContainer .macroCategories.featured{float:right}
+body.archive-podcasts .ilpostContainer .macroCategories h2{margin:0;text-transform:uppercase;font-size:14px;font-family:'Red Hat Display',sans-serif;margin-bottom:12px;font-weight:500}
+body.archive-podcasts .ilpostContainer .macroCategories .list{display:flex;flex-wrap:wrap}
+body.archive-podcasts .ilpostContainer .macroCategories .list .card{width:160px;margin-right:16px}
+body.archive-podcasts .ilpostContainer .macroCategories .list .card img{width:100%;border-radius:15px}
+body.archive-podcasts .ilpostContainer .macroCategories .list .card h3{margin:0;font-family:'Red Hat Display',sans-serif;font-size:18px;line-height:20px;margin-top:9px;margin-bottom:7px}
+body.archive-podcasts .ilpostContainer .macroCategories .list .card h3 a{color:#000;text-decoration:none}
+body.archive-podcasts .ilpostContainer .macroCategories .list .card p{font-size:12px;line-height:16px}
+body.tax-podcasts .ilpostContainer,body.single-episodes .ilpostContainer{display:flex;font-family:'Open Sans',sans-serif}
+body.tax-podcasts .ilpostContainer .ilpostContent,body.single-episodes .ilpostContainer .ilpostContent{width:65%}
+body.tax-podcasts .ilpostContainer .ilpostContent .imageEvidence,body.single-episodes .ilpostContainer .ilpostContent .imageEvidence{width:100%}
+body.tax-podcasts .ilpostContainer .ilpostContent h1.podcastTitle,body.single-episodes .ilpostContainer .ilpostContent h1.podcastTitle{font-size:40px;margin-top:20px;margin-bottom:40px;font-weight:400;font-family:'Georgia, Times, "Times New Roman", serif'}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices{background-color:#eef3f4;padding:21px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul{margin:0;display:flex;justify-content:flex-end}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li{margin-left:32px;font-size:14px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a{text-transform:uppercase;font-weight:600;font-size:14px;color:#000;text-decoration:none;background-size:auto 100%;background-repeat:no-repeat;background-position:left;padding-left:30px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.spreaker,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.spreaker{background-image:url("../img/podcast_service_spreaker_ico.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.spotify,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.spotify{background-image:url("../img/podcast_service_spotify_ico.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.apple,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.apple{background-image:url("../img/podcast_service_apple_ico.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.google,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.google{background-image:url("../img/podcast_service_google_ico.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.amazon,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li a.amazon{background-image:url("../img/podcast_service_amazon_ico.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastDesc,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastDesc{padding:21px;font-size:16px;line-height:28px;color:#000}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastDesc a,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastDesc a{color:#2da8c6;text-decoration:underline}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastDesc p,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastDesc p{margin:0}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList{padding-right:16px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList>div,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList>div{display:flex;margin-bottom:30px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList>div:first-child,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList>div:first-child{margin-top:30px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList .play,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList .play{width:48px;height:48px;background-image:url("../img/btn_play.svg");background-size:100%;background-repeat:no-repeat;background-position:center;display:block;margin-right:20px;cursor:pointer}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList .play:hover,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList .play:hover{background-image:url("../img/wave_ilpost_trasparent.gif")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList .play.listening,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList .play.listening{background-image:url("../img/wave_ilpost_trasparent.gif")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList .play.listening:hover,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList .play.listening:hover{background-image:url("../img/btn_pause.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList .play[data-file=""],body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList .play[data-file=""]{background-image:url("../img/ico_play_locked.svg")}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList p,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList p{font-size:14px;margin:0;color:#717171}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList h2,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList h2{font-size:18px;color:#000;font-family:'Georgia, Times, "Times New Roman", serif';font-weight:400;margin-top:8px;line-height:28px}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastList h2 a,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastList h2 a{color:#000;text-decoration:none;font-weight:400}
+body.tax-podcasts .ilpostContainer .ilpostSidebar,body.single-episodes .ilpostContainer .ilpostSidebar{width:35%;background-color:#eef3f4}
+body.tax-podcasts .ilpostContainer .ilpostSidebar .imageEvidenceMobile,body.single-episodes .ilpostContainer .ilpostSidebar .imageEvidenceMobile{display:none;width:100%}
+body.tax-podcasts .ilpostContainer .ilpostSidebar h3.podcastTitleMobile,body.single-episodes .ilpostContainer .ilpostSidebar h3.podcastTitleMobile{display:none;font-size:25px;margin-top:20px;margin-bottom:20px;font-weight:400;font-family:'Georgia, Times, "Times New Roman", serif'}
+.ilpostGift{font-family:'Open Sans',sans-serif;padding:20px;text-align:center}
+.ilpostGift#ilpostGiftLastEpisode{display:none}
+.ilpostGift p{margin:0;text-align:left}
+.ilpostGift a{display:block;width:100%;background-color:white;border:1px solid #2da8c6;padding-top:15px;padding-bottom:15px;color:white;font-size:14px;font-weight:600;border-radius:4px;margin-bottom:5px;text-decoration:none;text-align:left;cursor:pointer;color:black;background-image:url("../img/icon-gift.svg");background-repeat:no-repeat;background-position:7px 43%;box-sizing:border-box;padding-left:40px;position:relative}
+.ilpostGift a:after{content:' ';background-image:url("../img/pin_left.svg");position:absolute;top:15px;right:10px;width:15px;height:15px;background-size:auto 100%;background-repeat:no-repeat;background-position:right}
+.ilpostGift a:hover{text-decoration:none}
+.ilpostGiftModal{font-family:'Georgia, Times, "Times New Roman", serif'}
+.ilpostGiftModal .back{position:fixed;z-index:1000;background-color:rgba(0,0,0,0.5);width:100%;height:100%;display:none;left:0;top:0}
+.ilpostGiftModal .popup{position:fixed;left:50%}
+.ilpostGiftModal .popup{z-index:2000;background:#eef3f4;top:-150%;max-width:660px;width:100%;opacity:0;pointer-events:none;box-shadow:0 10px 15px rgba(0,0,0,0.1);transform:translate(-50%,-50%) scale(1.2);transition:top 0s .2s ease-in-out,opacity .2s 0s ease-in-out,transform .2s 0s ease-in-out;border-radius:4px;padding-bottom:34px}
+.ilpostGiftModal .popup.show{top:50%;opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1);transition:top 0s 0s ease-in-out,opacity .2s 0s ease-in-out,transform .2s 0s ease-in-out}
+.ilpostGiftModal .popup .field{display:flex;align-items:center;justify-content:space-between}
+.ilpostGiftModal .popup .icons{display:flex;align-items:center;justify-content:space-between;margin:15px 0 20px 0;align-items:center;justify-content:center}
+.ilpostGiftModal .popup .header{padding:15px;padding-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.ilpostGiftModal .popup .header h1{font-family:'Red Hat Text';font-size:22px;font-weight:600;font-stretch:normal;font-style:normal;line-height:normal;letter-spacing:.12px;text-align:center;color:#000}
+.ilpostGiftModal .popup .header span{font-size:20px;font-weight:500}
+.ilpostGiftModal .popup .header .close{font-size:20px;cursor:pointer}
+.ilpostGiftModal .popup .content{padding:15px;padding-top:10px;margin:0;font-family:'Open Sans',sans-serif}
+.ilpostGiftModal .popup .content p{font-family:'Red Hat Text';font-size:12px;line-height:14px;margin-bottom:5px}
+.ilpostGiftModal .popup .content p.other{font-size:16px;font-weight:normal;font-stretch:normal;font-style:normal;line-height:.88;letter-spacing:normal;text-align:center;margin-top:30px;margin-bottom:30px}
+.ilpostGiftModal .popup .content .lastPodcast{width:100%;border-radius:4px;background-color:white;padding:11px;margin-bottom:20px;box-sizing:border-box;display:flex}
+.ilpostGiftModal .popup .content .lastPodcast .lastPodcastImage{width:53px;margin-right:10px}
+.ilpostGiftModal .popup .content .lastPodcast .lastPodcastImage img{width:100%}
+.ilpostGiftModal .popup .content .lastPodcast .lastPodcastInfo p.date{color:#717171}
+.ilpostGiftModal .popup .content .lastPodcast .lastPodcastInfo p.title{font-weight:bolder;margin:0}
+.ilpostGiftModal .popup .content .ilpostGiftModal_step2{display:none}
+.ilpostGiftModal .popup .footer{font-family:'Open Sans',sans-serif;padding:15px;text-align:center}
+.ilpostGiftModal .popup .footer .msg p{font-family:'Red Hat Text';font-size:13px;line-height:14px;margin:0;font-weight:bolder}
+.ilpostGiftModal .popup .footer button.generate{border:0;font-family:'Open Sans',sans-serif;display:block;width:270px;background-color:#2da8c6;padding-top:15px;padding-bottom:15px;color:white;font-size:14px;font-weight:600;border-radius:4px;margin-bottom:5px;text-decoration:none;text-align:center;margin:0 auto;cursor:pointer}
+.ilpostGiftModal .popup .footer button.generate:hover{text-decoration:none}
+.ilpostGiftModal header .close,.ilpostGiftModal .icons a{display:flex;align-items:center;border-radius:50%;justify-content:center;transition:all .3s ease-in-out}
+.ilpostGiftModal header .close{color:#878787;font-size:17px;background:#f2f3fb;height:33px;width:33px;cursor:pointer}
+.ilpostGiftModal header .close:hover{background:#ebedf9}
+.ilpostGiftModal .content .icons a{height:80px;width:80px;font-size:20px;text-decoration:none;background-color:#2da8c6;color:white;margin-left:20px;margin-right:20px}
+.ilpostGiftModal .content .icons a#ilpostGiftModal_whatsapp{background-color:#25d366;color:white}
+.ilpostGiftModal .content .icons a#ilpostGiftModal_whatsapp:hover{background-color:#25d366;color:white}
+.ilpostGiftModal .content .icons a#ilpostGiftModal_telegram{background:#08c;color:white}
+.ilpostGiftModal .content .icons a#ilpostGiftModal_telegram:hover{background:#08c;color:white}
+.ilpostGiftModal .content .icons a:hover{background-color:#2da8c6;color:white}
+.ilpostGiftModal .content .icons a i{font-size:40px}
+.ilpostGiftModal .icons a i{transition:transform .3s ease-in-out}
+.ilpostGiftModal .content .field{margin:12px 0 -5px 0;height:45px;border-radius:4px;padding:0 5px;background-color:White;padding-right:0;max-width:514px;margin:0 auto;margin-bottom:20px}
+.ilpostGiftModal .field.active{border-color:#2da8c6}
+.ilpostGiftModal .field i{width:50px;font-size:18px;text-align:center}
+.ilpostGiftModal .field.active i{color:#2da8c6}
+.ilpostGiftModal .field input{width:100%;height:100%;border:0;outline:0;font-size:15px}
+.ilpostGiftModal .field button{color:#fff;padding:5px 18px;background:#2da8c6;height:45px;margin-left:10px;border-radius:4px}
+.ilpostGiftModal .field button:hover{background:#2da8c6}
+.ilpostPlayer{padding:20px;background-color:#eef3f4}
+.ilpostPlayer #ilpostPlayerWaveError{display:none;color:#717171;font-size:14px}
+.ilpostPlayer #ilpostPlayerWaveLoading{background-image:url("../img/loading_ilpost_trasparent.gif");background-repeat:no-repeat;background-position:center;min-height:75px;width:100%;background-size:auto 64px}
+.ilpostPlayer #ilpostPlayerWaveLocked{background-image:url("../img/ico_play_locked.svg");background-repeat:no-repeat;background-position:center;min-height:75px;width:100%;background-size:auto 64px;cursor:pointer}
+.ilpostPlayer audio{display:none}
+.ilpostPlayer #ilpostPlayerControls{text-align:center;margin-top:30px;display:flex;align-items:center;justify-content:center}
+.ilpostPlayer #ilpostPlayerControls .play{background-image:url("../img/btn_play.svg");background-size:64px 64px;width:64px;height:64px;display:block;margin-left:30px;margin-right:30px;cursor:pointer;display:none}
+.ilpostPlayer #ilpostPlayerControls .play.loading{background-image:url("../img/loading_ilpost_trasparent.gif")}
+.ilpostPlayer #ilpostPlayerControls .play.listening{background-image:url("../img/btn_pause.svg")}
+.ilpostPlayer #ilpostPlayerControls .controls{background-size:25px 27px;width:25px;height:27px;cursor:pointer;display:none}
+.ilpostPlayer #ilpostPlayerControls .controls.prev{background-image:url("../img/ico_10_prev.svg")}
+.ilpostPlayer #ilpostPlayerControls .controls.next{background-image:url("../img/ico_10_next.svg")}
+.ilpostPlayer #ilpostPlayerTimeline{display:flex;width:100%;margin-top:30px;display:none}
+.ilpostPlayer #ilpostPlayerTimeline div{width:15%;line-height:20px;font-size:13px}
+.ilpostPlayer #ilpostPlayerTimeline div.total_duration{text-align:right}
+.ilpostPlayer #ilpostPlayerTimeline input{width:70%}
+.ilpostPlayer #ilpostPlayerTimeline input.seek_slider{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:80%;height:2px;background:#b6b6b6;outline:0;margin-top:9px}
+.ilpostPlayer #ilpostPlayerTimeline input.seek_slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:10px;height:10px;background:#2da8c6;cursor:pointer;border-radius:100%}
+.ilpostPlayer #ilpostPlayerTimeline input.seek_slider::-moz-range-thumb{width:10px;height:10px;background:#2da8c6;cursor:pointer;border-radius:100%}
+.ilpostPlayer p.date{color:#717171;font-size:14px;margin:0}
+.ilpostPlayer h2.title{color:#000;font-size:18px;font-family:'Georgia, Times, "Times New Roman", serif';margin:0;margin-top:8px;margin-bottom:16px;font-weight:400;line-height:24px}
+ul.page-numbers{width:100%;display:block;text-align:center}
+ul.page-numbers li{display:inline;font-size:16px;font-weight:400;line-height:2em;color:#000}
+ul.page-numbers li a{color:#000;text-decoration:none;padding:0 .25em}
+ul.page-numbers li a:hover{color:#0889a7}
+ul.page-numbers li span.page-numbers{color:#0889a7}
+ul.page-numbers li span.page-numbers.dots{color:#000}
+.ilpostAdvAbbonatiSidebar{display:none;font-family:"Open Sans",sans-serif;border-top:2px solid #b6b6b6;padding:24px;text-align:center;border-bottom:2px solid #b6b6b6}
+.ilpostAdvAbbonatiSidebar p{text-align:left;font-size:12px;line-height:15px;margin-bottom:15px}
+.ilpostAdvAbbonatiSidebar h3{font-family:Georgia,'Times New Roman',Times,serif;margin:0;font-size:16px;font-weight:400;line-height:25px;margin-bottom:15px;text-align:left}
+.ilpostAdvAbbonatiSidebar h3 mark{background-color:#ffe725}
+.ilpostAdvAbbonatiSidebar h4{font-size:14px;font-weight:600;line-height:14px;display:inline;vertical-align:middle}
+.ilpostAdvAbbonatiSidebar h4 img{height:21px;display:inline;vertical-align:bottom}
+.ilpostAdvAbbonatiSidebar ul{margin:0;padding:0;padding-left:35px;padding-right:35px;text-align:left;margin-top:26px;margin-bottom:42px}
+.ilpostAdvAbbonatiSidebar ul li{list-style-type:none;margin:0;padding:0;font-size:12px;font-weight:400;margin-bottom:15px;background-size:auto 100%;padding-left:20px;position:relative}
+.ilpostAdvAbbonatiSidebar ul li::before{content:'';width:12px;height:12px;background-image:url("../img/checkmark.svg");background-repeat:no-repeat;display:flex;position:absolute;left:0;background-position:center center;background-size:contain;top:1px}
+.ilpostAdvAbbonatiSidebar .plan{display:flex;margin-top:16px;justify-content:space-between}
+.ilpostAdvAbbonatiSidebar .plan .plan_box{width:48%;margin:0 auto}
+.ilpostAdvAbbonatiSidebar .plan .plan_box a{display:block;width:100%;background-color:#2da8c6;padding-top:15px;padding-bottom:15px;color:white;font-size:14px;font-weight:600;border-radius:4px;margin-bottom:5px;text-decoration:none}
+.ilpostAdvAbbonatiSidebar .plan .plan_box span{color:#686868;font-size:11px;font-style:italic}
+.modalilpostAdvAbbonati{position:fixed;top:0;left:0;width:100%;height:100%;display:none}
+.modalilpostAdvAbbonati::before{content:' ';width:100%;height:100%;top:0;left:0;position:absolute;background-color:rgba(0,0,0,0.6)}
+.modalilpostAdvAbbonati .ilpostAdvAbbonatiSidebar{padding-left:100px;padding-right:100px;top:50%;left:50%;transform:translate(-50%,-50%);position:absolute;display:block;background-color:#eef3f4;border:0}
+@media only screen and (max-width:900px){body.archive-podcasts .ilpostContainer h1{font-size:40px}
+body.archive-podcasts .ilpostContainer .macroCategories.inline{float:none}
+body.archive-podcasts .ilpostContainer .macroCategories.block{border:0;padding-top:0}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list{display:block}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card{width:100%;margin-bottom:13px;display:flex}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card div:first-child{width:20%;margin-right:15px}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card div:first-child img{border-radius:9px}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card div:last-child{width:80%}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card h3{margin:0;font-size:16px;margin-bottom:3px}
+body.archive-podcasts .ilpostContainer .macroCategories.block .list .card p{font-size:12px}
+body.archive-podcasts .ilpostContainer .macroCategories.featured{float:none}
+body.archive-podcasts .ilpostContainer .macroCategories.featured h2{display:none}
+body.archive-podcasts .ilpostContainer .macroCategories.featured .list .card{width:100%}
+body.archive-podcasts .ilpostContainer .macroCategories h2{border-top:1px solid #767676;border-bottom:1px solid #767676;padding-top:5px;padding-bottom:5px;width:100%;text-align:center;font-size:14px}
+body.archive-podcasts .ilpostContainer .macroCategories .list.single .card{width:100%;display:flex;justify-content:center;align-items:center}
+body.archive-podcasts .ilpostContainer .macroCategories .list.single .card div:first-child{width:50%;margin-right:15px}
+body.archive-podcasts .ilpostContainer .macroCategories .list.single .card div:last-child{width:50%}
+body.archive-podcasts .ilpostContainer .macroCategories .list.single .card h3{margin:0;font-size:16px;margin-bottom:3px}
+body.archive-podcasts .ilpostContainer .macroCategories .list.single .card p{font-size:12px}
+body.archive-podcasts .ilpostContainer .macroCategories .list{justify-content:space-between}
+body.archive-podcasts .ilpostContainer .macroCategories .list .card{margin-right:0;width:47%}
+body.tax-podcasts .ilpostContainer,body.single-episodes .ilpostContainer{flex-direction:column-reverse}
+body.tax-podcasts .ilpostContainer .ilpostContent,body.single-episodes .ilpostContainer .ilpostContent{width:auto}
+body.tax-podcasts .ilpostContainer .ilpostContent .imageEvidence,body.single-episodes .ilpostContainer .ilpostContent .imageEvidence{display:none}
+body.tax-podcasts .ilpostContainer .ilpostContent h1.podcastTitle,body.single-episodes .ilpostContainer .ilpostContent h1.podcastTitle{display:none}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul{display:block}
+body.tax-podcasts .ilpostContainer .ilpostContent .ilpostPodcastServices ul li,body.single-episodes .ilpostContainer .ilpostContent .ilpostPodcastServices ul li{flex:none;display:block;text-align:left;line-height:30px;margin-left:0}
+body.tax-podcasts .ilpostContainer .ilpostSidebar,body.single-episodes .ilpostContainer .ilpostSidebar{width:100%;background:0}
+body.tax-podcasts .ilpostContainer .ilpostSidebar .imageEvidenceMobile,body.single-episodes .ilpostContainer .ilpostSidebar .imageEvidenceMobile{display:block}
+body.tax-podcasts .ilpostContainer .ilpostSidebar h3.podcastTitleMobile,body.single-episodes .ilpostContainer .ilpostSidebar h3.podcastTitleMobile{display:block}
+.ilpostAdvAbbonatiSidebar{display:none}
+.modalilpostAdvAbbonati .ilpostAdvAbbonatiSidebar{display:block;padding-right:20px;padding-left:20px;width:80%}
+}

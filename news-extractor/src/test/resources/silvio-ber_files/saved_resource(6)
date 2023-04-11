@@ -1,0 +1,49 @@
+
+var ftGUID_4231132="5487A8AD2830D7";
+var ftConfID_4231132="0";
+var ftParams_4231132="ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2F5e2a0c9f16391d9d81c5bbc710635c58.safeframe.googlesyndication.com%2Fsafeframe%2F1-0-40%2Fhtml%2Fcontainer.html&gdpr=1&gdpr_consent=CPp7d-5Pp7d-5AcABBENC_CsAP_AAH_AAAYgJUtf_X__b2_r-_5_f_t0eY1P9_7__-0zjhfdl-8N3f_X_L8X52M7vF36tq4KuR4ku3LBIUdlHPHcDVmw6okVryPsbk2cr7NKJ7PEmnMbO2dYGH9_n1_z-ZKY7___f_7z_v-v________7-3f3__5___-3_e_V__9zfn9_____9vP___9v-_9__________3_79_7_H9-fglQASYatxAF2JY4E20YRQIgRhWEhVAoAKKAYWiAwgdXBTsrgJ9YRIAUAoAjAiBDgCjJgEAAAEASEQASBHggEABEAgABAAqEQgAI2AQUAFgIBAAKAaFijFAEIEhBkRERSmBARIkFBPZUIJQf6GmEIdZYAUGj_ioQESgBCsCISFg5DgiQEvFkgWYo3yAEYAUAolQrUEnpoAEAAAAA.f_gAD_gAAAAA&us_privacy=${US_PRIVACY}&cachebuster=365456.37222729786&ft_dv=%5B%25ft_dv%25%5D";
+var ftKeyword_4231132="";
+var ftCustom_4231132="";
+var ftSection_4231132="";
+var ftSegment_4231132="";
+var ftSegmentList_4231132=[];
+var ftRuleMatch_4231132="0";
+var ftTimestamp_4231132="1680972475";
+var ftGeoC2_4231132="it";
+var ftGeoState_4231132="aq";
+var ftGeoCity_4231132="capistrello";
+var ftISP_4231132="poste italiane s.p.a.";
+var ftSpeed_4231132="mobile";
+var ftConnType_4231132="mobile";
+var ftDMA_4231132="-1";
+var ftLong_4231132="13.39";
+var ftLat_4231132="41.97";
+var ftPostal_4231132="67053";
+var ftTimeZone_4231132="+200";
+var ftMobileCarrier_4231132="poste mobile";
+var ftImp4231132 = {};
+ftImp4231132.privacy = "x";
+ftImp4231132.guidAge = "89";
+ftImp4231132.impID = "6BFC3E4D-EC8B-D69C-7FE7-C8D1AF02609C";
+ftImp4231132.duid = "FT:5487A8AD2830D7";
+
+ftImp4231132.ft_tpplid = "";
+ftImp4231132.ft_c = {};
+ftImp4231132.gdpr = "1";
+ftImp4231132.gdpr_consent = "CPp7d-5Pp7d-5AcABBENC_CsAP_AAH_AAAYgJUtf_X__b2_r-_5_f_t0eY1P9_7__-0zjhfdl-8N3f_X_L8X52M7vF36tq4KuR4ku3LBIUdlHPHcDVmw6okVryPsbk2cr7NKJ7PEmnMbO2dYGH9_n1_z-ZKY7___f_7z_v-v________7-3f3__5___-3_e_V__9zfn9_____9vP___9v-_9__________3_79_7_H9-fglQASYatxAF2JY4E20YRQIgRhWEhVAoAKKAYWiAwgdXBTsrgJ9YRIAUAoAjAiBDgCjJgEAAAEASEQASBHggEABEAgABAAqEQgAI2AQUAFgIBAAKAaFijFAEIEhBkRERSmBARIkFBPZUIJQf6GmEIdZYAUGj_ioQESgBCsCISFg5DgiQEvFkgWYo3yAEYAUAolQrUEnpoAEAAAAA.f_gAD_gAAAAA";
+ftImp4231132.gdpr_pd = "";
+ftImp4231132.oob_consent = "";
+ftImp4231132.gdprStoredConsent = "";
+ftImp4231132.us_privacy = "!!US_PRIVACY!";
+
+ftImp4231132.jsAppend = "1";
+(function(){
+    var tag = document.getElementById('ft_servedby_4231132') || (function(s){
+    	return s[s.length-1];
+    }(document.getElementsByTagName('script'))),
+           js = document.createElement('script');
+    js.src =
+"https://cdn.flashtalking.com/xre/423/4231132/4112630/js/j-4231132-4112630.js";
+    js.id = "ftscript_m4231132";
+    tag.parentNode.insertBefore(js, tag);
+}());

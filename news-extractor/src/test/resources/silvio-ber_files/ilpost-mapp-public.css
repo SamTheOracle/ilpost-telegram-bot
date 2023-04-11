@@ -1,0 +1,228 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+/*
+ * Mailchimp Style
+ */
+
+div.intelligence .callToAction{
+    margin:0 0 2em;
+}
+
+
+div#mapp_sticky_footer{
+    width: 100%;
+    position: fixed;
+    background: white;
+    bottom: 0px;
+    z-index: 10000;
+}
+div#mapp_sticky_footer img{
+    max-width:100%;
+}
+div#mapp_sticky_footer a.mapp_sticky_footer_close{
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 30px;
+    color: #2da8c6;
+    background:white;
+    border-radius: 100%;
+    line-height: 21px;
+    cursor: pointer;
+
+}
+
+div#singleBody.singleBodyPayWall{
+    height:550px;
+    overflow: hidden;
+    position: relative;
+}
+div#singleBody.singleBodyPayWall .intelligence{
+    display:none;
+}
+div#mapp_article_paywall>div::before{
+    content:' ';
+    width:100%;
+    position: absolute;
+    top:-200px;
+    height:200px;
+    width:100%;
+    left:0px;
+    box-shadow: 0px -112px 68px 13px rgb(255, 255, 255) inset;
+    -webkit-box-shadow: 0px -112px 68px 13px rgb(255, 255, 255) inset;
+    -moz-box-shadow: 0px -112px 68px 13px rgb(255, 255, 255) inset;
+}
+div#mapp_article_paywall a.mapp_article_paywall_close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+    background:white;
+    border-radius: 100%;
+    line-height: 21px;
+    cursor: pointer;
+
+}
+div #mapp_article_paywall{
+    position:absolute !important;
+    top:0px !important;
+    width:100% !important;
+    height: 100% !important;
+    background-color: #ede8e3;
+    border-radius: 5px;
+}
+div#mapp_article_paywall>div{
+    position: absolute;
+    bottom:0;
+    left:0px;
+    width:100%;
+    height: 100%;
+    z-index: 100;
+}
+div#mapp_article_paywall>div>div{
+    height: 100%;
+}
+div#mapp_article_paywall p{
+    padding:0px;
+    font-size:16px;
+}
+div#mapp_article_paywall div .call-to-action-paywall {
+    padding: 1em;
+    color: #000;
+    font-size: 16px;
+    line-height: 29px;
+    box-sizing: border-box;
+    margin:0px;
+    background-color: #f0f0ec;
+}
+div#mapp_article_paywall div .call-to-action-paywall .subscription-options {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-top:20px;
+}
+div#mapp_article_paywall div .call-to-action-paywall .subscription-options .subscription-single {
+    text-transform: uppercase;
+    width: 50%;
+    text-align: center;
+}
+div#mapp_article_paywall div .call-to-action-paywall .subscription-options .subscription-single a {
+    color: black;
+}
+div#mapp_article_paywall div .call-to-action-paywall .subscription-options .subscription-single a .price {
+    font-size: 30px;
+    display: block;
+    margin-top: 2px;
+    text-transform: none;
+}
+div#mapp_article_paywall div .call-to-action-paywall .subscription-options .subscription-single:first-child {
+    border-right: 1px solid #000;
+}
+div#mapp_article_paywall div .call-to-action-paywall .highlight {
+    background-image: linear-gradient(180deg, transparent 55%, #fbe53e 0);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    padding: 0.25rem 0.125rem;
+    color: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+}
+div#mapp_article_paywall div .call-to-action-paywall .highlight h3 {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 38px;
+}
+div#mapp_article_paywall div .call-to-action-paywall .highlight img {
+    height: 43px;
+    vertical-align: text-bottom;
+    margin-left: 20px;
+    display: inline-block;
+}
+div#singleBody.singleBodyPayWall .intelligence div#mapp_article_paywall .intelligence{
+	display:block;
+}
+
+.call-to-action-paywall-alt {
+    padding: 1.5em;
+    height: inherit;
+}
+div#mapp_article_paywall .call-to-action-paywall-alt a.mapp_article_paywall_close {
+    top: 5px;
+    right: 5px;
+}
+.single-post-new article.leaf .entry-content .call-to-action-paywall-alt h3 {
+    font-family: Georgia, Arial, Helvetica, "Sans Serif";
+    font-size: 3em;
+}
+.paywall-alt-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2.5em;
+    margin: 0 auto;
+}
+.paywall-alt-column {
+    padding: .5em;
+    flex: 1;
+}
+div#mapp_article_paywall .paywall-alt-column p {
+    margin-top: 2em;
+    line-height: 1.2em;
+}
+.paywall-alt-column .paywall-alt-btn {
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700 !important;
+    padding: .5em 1em;
+}
+.paywall-alt-column .mapp_article_paywall_close {
+    cursor: pointer;
+}
+.paywall-alt-btn.white {
+    background-color: #fff;
+}
+.paywall-alt-btn.blue {
+    background-color: #5cc5e0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed";
+}
+.paywall-alt-btn.blue a, .paywall-alt-btn.blue a:hover, .paywall-alt-btn.blue a:visited {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.paywall-alt-btn small {
+    font-size: .5em;
+    text-transform: none;
+    font-family: Georgia;
+}
+@media (max-width: 480px) {
+  .call-to-action-paywall-alt {
+    text-align: center;
+  }
+  .single-post-new article.leaf .entry-content .call-to-action-paywall-alt h3 {
+      font-size: 2em;
+  }
+  .paywall-alt-options {
+    flex-direction: column-reverse;
+    font-size: 2.2em;
+  }
+  .paywall-alt-column {
+    flex: auto;
+  }
+  div#mapp_article_paywall .paywall-alt-column p {
+    margin-top: 1em;
+    margin-bottom: 1em
+  }
+}
