@@ -4,7 +4,7 @@ typealias NewsLocationUrl = String
 
 abstract class NewsData(open val author: String? = null, open val link: String? = null, open val date: String? = null)
 
-class ArticleData(
+data class ArticleData(
     override val author: String? = null,
     override val link: String? = null,
     override val date: String? = null,
