@@ -14,7 +14,11 @@ class NewsExtractorPoller : NewsPoller {
     @All
     lateinit var newsExtractors: MutableList<NewsDataExtractor>
     override fun start(period: Int, timeUnit: TimeUnit, newsObserver: List<NewsObserver>) {
-       newsExtractors.forEach { it.extract() }
+        newsObserver.forEach {
+            newsExtractors.forEach { newsExtractor ->
+                it.onNewsUpdates(newsExtractor.extract()?.values?.flatten()?.toSet() ?: emptySet())
+            }
+        }
     }
 
     override fun stop() {

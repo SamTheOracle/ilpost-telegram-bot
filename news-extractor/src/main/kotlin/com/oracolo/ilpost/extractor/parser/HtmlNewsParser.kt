@@ -1,37 +1,22 @@
 package com.oracolo.ilpost.extractor.parser
 
-import com.oracolo.ilpost.extractor.ArticleData
-import com.oracolo.ilpost.extractor.NewsData
 import com.oracolo.ilpost.extractor.client.NewsHostClient
+import com.oracolo.ilpost.extractor.config.ParserConfig
 import org.eclipse.microprofile.config.inject.ConfigProperty
 import org.eclipse.microprofile.rest.client.inject.RestClient
 import org.jsoup.Jsoup
-import javax.enterprise.context.ApplicationScoped
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.util.*
+import javax.annotation.PostConstruct
 import javax.inject.Inject
+import javax.inject.Singleton
 
-@ApplicationScoped
+@Singleton
 class HtmlNewsParser : NewsParser {
 
-    @ConfigProperty(name = "html.parser.article.tag")
-    lateinit var articleTag: String
-
-    @ConfigProperty(name = "html.parser.article.link.tag")
-    lateinit var linkTag: String
-
-    @ConfigProperty(name = "html.parser.article.href.attribute")
-    lateinit var hrefAttribute: String
-
-    @ConfigProperty(name = "html.parser.article.title.class")
-    lateinit var titleClass: String
-
-    @ConfigProperty(name = "html.parser.article.category.class")
-    lateinit var categoryClass: String
-
-    @ConfigProperty(name = "html.parser.article.date.class")
-    lateinit var dateClass: String
-
-    @ConfigProperty(name = "html.parser.query-suffix")
-    lateinit var querySuffix: String
+    @Inject
+    lateinit var parserConfig: ParserConfig
 
     @ConfigProperty(name = "quarkus.rest-client.\"news.host.client\".url")
     lateinit var baseUrl: String
@@ -40,20 +25,37 @@ class HtmlNewsParser : NewsParser {
     @RestClient
     lateinit var newsHostClient: NewsHostClient
 
-    override fun parse(fileContent: String): Set<NewsData> {
+    lateinit var dateTimeFormatter: DateTimeFormatter
+
+    @PostConstruct
+    fun init() {
+        dateTimeFormatter = DateTimeFormatter.ofPattern(parserConfig.datePattern(), Locale.ITALY)
+    }
+
+
+    override fun parse(fileContent: String): Set<ParseResult> {
         val parse = Jsoup.parse(fileContent)
-        val articleDOMElements = parse.select(articleTag)
-        val newsData = mutableListOf<NewsData>()
+        val articleDOMElements = parse.select(parserConfig.article().articleTag())
+        val parseResults = mutableSetOf<ParseResult>()
         for (articleDOM in articleDOMElements) {
-            val linkDOMElement = articleDOM.select(linkTag)
-            val link = linkDOMElement.attr(hrefAttribute).replaceAfter(querySuffix, "").removeSuffix(querySuffix)
+            val linkDOMElement = articleDOM.select(parserConfig.article().linkTag())
+            val link = linkDOMElement.attr(parserConfig.article().hrefAttribute())
+                .replaceAfter(parserConfig.querySuffix(), "").removeSuffix(parserConfig.querySuffix())
             val articleData = newsHostClient.getNews(link.removePrefix(baseUrl))
             val parsedArticleDOM = Jsoup.parse(articleData)
-            val category = parsedArticleDOM.getElementsByClass(categoryClass).first()?.text()
-            val date = parsedArticleDOM.getElementsByClass(dateClass).first()?.text()
-            val title = parsedArticleDOM.getElementsByClass(titleClass).first()?.text()
-            newsData.add(ArticleData(link = link, title = title, category = category, date = date))
+            val category =
+                parsedArticleDOM.getElementsByClass(parserConfig.article().categoryClass()).first()?.text()
+            val date = parsedArticleDOM.getElementsByClass(parserConfig.article().dateClass()).first()?.text()
+            val title = parsedArticleDOM.getElementsByClass(parserConfig.article().titleClass()).first()?.text()
+            parseResults.add(
+                ParseResult(
+                    category = category,
+                    date = runCatching { LocalDate.parse(date?.lowercase(), dateTimeFormatter) }.getOrNull(),
+                    title = title,
+                    link = link
+                )
+            )
         }
-        return newsData.toSet()
+        return parseResults
     }
 }

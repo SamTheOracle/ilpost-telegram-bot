@@ -1,6 +1,8 @@
 package com.oracolo.ilpost.extractor.article
 
-import com.oracolo.ilpost.extractor.NewsData
+
+import com.oracolo.ilpost.News
+import com.oracolo.ilpost.NewsFactory
 import com.oracolo.ilpost.extractor.NewsDataExtractor
 import com.oracolo.ilpost.extractor.NewsExtractionResult
 import com.oracolo.ilpost.extractor.NewsLocationUrl
@@ -40,9 +42,14 @@ class ArticleDataExtractor : NewsDataExtractor {
     }
 
 
-    private fun doExtract(location: String = DEFAULT_LOCATION): Set<NewsData> {
+    private fun doExtract(location: String = DEFAULT_LOCATION): Set<News> {
         val htmlFile = newsHostClient.getNews(location)
-        return newsParser.parse(htmlFile)
+        return newsParser.parse(htmlFile).map {
+            NewsFactory.readOnlyNews(
+                null, it.link, it.category,
+                it.date, it.title, null
+            )
+        }.toSet()
     }
 
     companion object {

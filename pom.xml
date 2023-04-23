@@ -20,11 +20,12 @@
             news-extractor
         </module>
         <module>
-            news-poller
-        </module>
-        <module>
             news-observer
         </module>
+        <module>
+            news-poller
+        </module>
+        <module>news-articles</module>
     </modules>
 
 </project>
