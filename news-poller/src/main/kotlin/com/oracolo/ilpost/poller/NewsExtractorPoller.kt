@@ -32,6 +32,6 @@ class NewsExtractorPoller : NewsPoller {
     }
 
     override fun stop() {
-        TODO("Not yet implemented")
+        scheduler.shutdown()
     }
 }
