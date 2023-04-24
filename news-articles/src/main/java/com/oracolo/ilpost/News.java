@@ -15,4 +15,6 @@ public interface News {
     String title();
 
     Integer timeToComplete();
+
+    String text();
 }

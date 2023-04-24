@@ -1,6 +1,7 @@
 package com.oracolo.ilpost;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class ReadOnlyNews implements News {
 
@@ -60,5 +61,12 @@ public class ReadOnlyNews implements News {
     @Override
     public Integer timeToComplete() {
         return timeToComplete;
+    }
+
+    @Override
+    public String text() {
+        String link = Objects.requireNonNull(this.link);
+        String mainBody = "Ecco un nuovo articolo %s";
+        return String.format(mainBody, link);
     }
 }
