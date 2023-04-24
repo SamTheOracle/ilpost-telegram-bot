@@ -1,7 +1,11 @@
 package com.oracolo.ilpost;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.Locale;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 public class ReadOnlyNews implements News {
 
@@ -66,7 +70,30 @@ public class ReadOnlyNews implements News {
     @Override
     public String text() {
         String link = Objects.requireNonNull(this.link);
-        String mainBody = "Ecco un nuovo articolo %s";
-        return String.format(mainBody, link);
+        String title = Objects.requireNonNull(this.title);
+        StringBuilder mainBodyBuilder = new StringBuilder(String.format("%s %s", title, link));
+        if (author != null) {
+            mainBodyBuilder.append(" ").append(String.format("scritto da %s", author));
+        }
+        if (timestamp != null) {
+            mainBodyBuilder.append(String.format(", il %s", timestamp.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)
+                    .withLocale(Locale.ITALY))));
+        }
+        if (category != null) {
+            mainBodyBuilder.append(String.format(" per la categoria %s", category));
+        }
+        return mainBodyBuilder.toString();
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", ReadOnlyNews.class.getSimpleName() + "[", "]")
+                .add("title='" + title + "'")
+                .add("author='" + author + "'")
+                .add("link='" + link + "'")
+                .add("category='" + category + "'")
+                .add("timestamp=" + timestamp)
+                .add("timeToComplete=" + timeToComplete)
+                .toString();
     }
 }

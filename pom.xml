@@ -16,16 +16,11 @@
     <name>Telegram Bot IlPost</name>
 
     <modules>
-        <module>
-            news-extractor
-        </module>
-        <module>
-            news-observer
-        </module>
-        <module>
-            news-poller
-        </module>
+        <module>news-extractor</module>
+        <module>news-observer</module>
+        <module>news-poller</module>
         <module>news-articles</module>
+        <module>server</module>
     </modules>
 
 </project>
